@@ -1,0 +1,47 @@
+[
+  {
+    id: 0,
+    text: "bla blablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+    blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla
+    ",
+    color: "#FFD700"
+  },
+  {
+    id: 1,
+    text: "nodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenode
+    nodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenodenode
+    ",
+    color: "#20B2AA"
+  },
+  {
+    id: 2,
+    text: "pie piepiepiepiepiepiepiepiepie",
+    color: "#90EE90"
+  },
+  {
+    id: 3,
+    text: "JavaScript JavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScriptJavaScript",
+    color: "#87CEFA"
+  },
+  {
+    id: 4,
+    text: "Spring SpringSpringSpringSpringSpringSpringSpringSpringSpringSpringSpringSpringSpringSpringSpringSpring",
+    color: "#FFB6C1"
+  },
+  {
+    id: 5,
+    text: "Java 8 Java 8Java 8Java 8Java 8Java 8Java 8Java 8Java 8Java 8",
+    color: "#5F9EA0"
+  },
+  {
+    id: 6,
+    text: "TypeScript TypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScriptTypeScript",
+    color: "#FFA07A"
+  },
+  {
+    id: 7,
+    text: "Android AndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroidAndroid",
+    color: "#00FA9A"
+  }
+]
