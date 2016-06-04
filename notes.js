@@ -19,14 +19,14 @@ var ColorPicker = React.createClass({
     render: function(){
         return (
            <div className="color-picker">
-               <div className="ellipse red" onClick={this.props.onChooseColor('red')}></div>
-               <div className="ellipse blue" onClick={this.props.onChooseColor('blue')}></div>
-               <div className="ellipse light-green" onClick={this.props.onChooseColor('light-green')}></div>
-               <div className="ellipse coral" onClick={this.props.onChooseColor('coral')}></div>
-               <div className="ellipse green-yellow" onClick={this.props.onChooseColor('green-yellow')}></div>
-               <div className="ellipse pink" onClick={this.props.onChooseColor('pink')}></div>
-               <div className="ellipse dodger-blue" onClick={this.props.onChooseColor('dodge-blue')}></div>
-               <div className="ellipse yellow" onClick={this.props.onChooseColor('yellow')}></div>
+               <div className="ellipse red" onClick={this.props.onChooseColor}></div>
+               <div className="ellipse blue" onClick={this.props.onChooseColor}></div>
+               <div className="ellipse lawngreen" onClick={this.props.onChooseColor}></div>
+               <div className="ellipse coral" onClick={this.props.onChooseColor}></div>
+               <div className="ellipse orange" onClick={this.props.onChooseColor}></div>
+               <div className="ellipse deeppink" onClick={this.props.onChooseColor}></div>
+               <div className="ellipse dodgerblue" onClick={this.props.onChooseColor}></div>
+               <div className="ellipse yellow" onClick={this.props.onChooseColor}></div>
            </div>
        )
    }
@@ -47,30 +47,39 @@ var NoteEditor = React.createClass({
     handleAddNote: function(){
         var newNote = {
             text: this.state.text,
-            color: 'coral',
+            color: this.state.backColor,
             id: Date.now()
         }
 
         this.props.onNoteAdd(newNote);
-        this.setState({ text: '' });
+        this.setState({
+            text: '',
+            backColor: 'red'
+        });
     },
 
-    handleChooseBackColor: function(color){
+    handleChooseBackColor: function(event){
+        //Get name color from class name
+        var colorName = event.target.classList[1];
+
         //Set note back color
-        var style = {
-            backgroundColor: color
-        }
-        this.style = style;
+        this.setState({
+             backColor: colorName
+        })
     },
 
     render: function () {
+        var style = {
+            backgroundColor: this.state.backColor
+        }
         return (
             <div className="note-editor">
                 <textarea placeholder="Enter yout note here..."
                           rows={5}
+                          style={style}
                           className="textarea"
                           value={this.state.text}
-                          onChange={this.handleTextChange} />
+                          onChange={this.handleTextChange} ref="textArea"/>
                 <ColorPicker onChooseColor={this.handleChooseBackColor} />
                 <button className="add-button" onClick={this.handleAddNote}>Add Note</button>
             </div>
